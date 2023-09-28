@@ -1,1 +1,1 @@
-"Not all those who wander are happy" - quote from J.R.R Tolkien.
+"Not all those who wander are lost" - quote from J.R.R Tolkien.
