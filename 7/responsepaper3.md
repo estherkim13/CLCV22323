@@ -1,0 +1,7 @@
+What is a historical gazetteer, and what’s its purpose?
+A historical gazetteer is a sort of dictionary or index of every single geographical place name that existed in history. This would generally be used in conjunction with historical/ancient maps to study its history and geography.
+
+How does Pleiades differ from its printed predecessor, Barrington Atlas?
+Whereas the printed Atlas had to be commissioned to 200 knowledgeable people through personal invitations and connections, Pleiades is maintained and supported by not just the original creators but also by the crowd around the world. Whereas the Atlas can quickly go out of date upon discovery of new data and require reprinting of new editions, the digital Pleiades allows the entire online database to be edited and updated for everyone simultaneously. This requires a completely different and more difficult data organization than its physical counterpart in the Atlas, as every single piece of knowledge about the maps had to be reorganized into the smallest discrete units, and then be formatted to appear in the correct way. 
+
+In addition, in Pleiades, the places are conceptual entities rather than purely physical entities as in the Atlas. For Pleiades, the term "place" is applied to any locus of human attention, material or intellectual, still in a real geographical context, which is slightly more difficult to imagine, but encompasses a much greater swath than the physical Atlas can hold.
