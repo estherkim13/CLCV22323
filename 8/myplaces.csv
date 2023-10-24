@@ -1,7 +1,7 @@
-name,lat,long
-Thebai,23.317799,38.319076
-Athenae,23.7239851818,37.9727465455
-Colchis,39.228819,38.52585
-Krete,22.5,37.5
-Kolonos,23.721885,37.99907
-Troia,34.609167,39.291667
+Title,Longitude,Latitude,url,depictions
+Thebai,23.317799,38.319076,https://pleiades.stoa.org/places/541138,https://cdn.britannica.com/53/150953-050-2E0836EB/Parthenon-Acropolis-Athens.jpg
+Athenae,23.7239851818,37.9727465455,https://pleiades.stoa.org/places/579885,
+Colchis,39.228819,38.52585,https://pleiades.stoa.org/places/874432,
+Krete,22.5,37.5,https://pleiades.stoa.org/places/1001897,
+Kolonos,23.721885,37.99907,https://pleiades.stoa.org/places/582869,
+Troia,26.2385156164,39.9574380796,https://pleiades.stoa.org/places/550595,
