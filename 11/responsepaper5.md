@@ -1,0 +1,3 @@
+Based on your readings, expand shortly (less than 80 words) how 3D modeling has assisted the archaeological process.
+
+Photogrammetry is a 3D modeling process that is much faster, more efficient, and detailed than analogue methods of drawing features. Some 3D models can generate visualizations that cannot be made with its analogue counterparts, and the 3D digital models can help integrate matching records and digital data to 3D locations and spaces. These digital methods allow studying of certain archaelogical excavation sites or items without necessarily being at that location and without the fear of damaging any items, especially when it is displayed to the general public, potential donors, or students.
