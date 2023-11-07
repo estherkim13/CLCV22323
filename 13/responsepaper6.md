@@ -1,0 +1,3 @@
+Based on your readings, expand shortly (less than 80-100 words) how has the integration of augmented reality in archaeology readings impacted our understanding of historical sites and museums.
+
+Integration of augmented reality in arhcaeology allows us to digitally reconstruct an archetectural ruin or location without making permanant changes to the archaeological evidence. These 3D models of augmented reality refer to models of, for example, amphitheaters, building upon the physical ruins a projected 3D structure which effectively allows for scholars, students, and other visitors to study the original before it becomes slightly damaged, or manipulated.
