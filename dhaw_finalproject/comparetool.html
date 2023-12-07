@@ -22,7 +22,7 @@
       <ul class="nav-links">
         <li><a href="/aboutpage.html">About</a></li>
         <li><a href="/comparetool.html">Compare Greek Tragedies</a></li>
-        <li><a href="#greek-tragedians">Greek Tragedians</a></li>
+        <li><a href="/greektragedians.html">Greek Tragedians</a></li>
         <li><a href="#ancient-objects">Ancient Objects</a></li>
       </ul>
     </nav>
@@ -33,11 +33,11 @@
   <main>
     <!-- Main content here -->
     <section id="select-greek-tragedies">
-      <h3>
+      <h3 id="tragedyHeader">
         <div id="choose-tragedy">
           <form> <!--DROPDOWN OPTION MENU TO SELECT A GREEK TRAGEDY-->
             <label for="select-tragedies">Select a greek tragedy to examine:</label>
-            <select name="tragedy" id="tragedy-options" onmouseover="getTragedy()" onchange="getTragedy()">
+            <select name="tragedy" id="tragedy-options" onmouseover=getTragedy() onchange=getTragedy()>
               <optgroup label="Aeschylus"> <!--GROUP PLAYS BY AESCHYLUS-->
                 <option value="aes-the-persians">The Persians</option>
                 <option value="aes-seven-against-thebes">Seven Against Thebes</option>
@@ -105,10 +105,74 @@
                 //   <option value="hippolytus-translation-1">Hippolytus translation 1</option>;
                 //   <option value="hippolytus-translation-2">Hippolytus translation 2</option>;
                 // } else { -->
-                  <option class="eur-medea" value="eur-med-michael-collier">eur-med-michael-collier</option>;
-                  <option class="eur-medea" value="eur-med-diane-svarlien">eur-med-diane-svarlien</option>;
-                  <option class="aes-agamemnon" value="aes-agamemnon-trans-a">Aes Agam translation A</option>;
-                  <option class="aes-agamemnon" value="aes-agamemnon-trans-b">Aes Agam translation B</option>;
+
+              <!-- Euripides options of all translations -->
+              <!--Alcestis-->
+              <option class="eur-alcestis" value="eur-alcestis-richmond-lattimore">eur-alcestis-richmond-lattimore</option>;
+              <option class="eur-alcestis" value="eur-alcestis-theodore-buckley">eur-alcestis-theodore-buckley</option>;
+              <!--Andromache-->
+              <option class="eur-andromache" value="eur-andromache-deborah-roberts">eur-andromache-deborah-roberts</option>;
+              <option class="eur-andromache" value="eur-andromache-edward-coleridge">eur-andromache-edward-coleridge</option>;
+              <!--Bacchae-->
+              <option class="eur-the-bacchae" value="eur-the-bacchae-theodore-buckley">eur-the-bacchae-theodore-buckley</option>;
+              <option class="eur-the-bacchae" value="eur-the-bacchae-william-arrowsmith">eur-the-bacchae-william-arrowsmith</option>;
+              <!--Cyclops-->
+              <option class="eur-cyclops" value="eur-cyclops-edward-coleridge">eur-cyclops-edward-coleridge</option>;
+              <option class="eur-cyclops" value="eur-cyclops-william-arrowsmith">eur-cyclops-william-arrowsmith</option>;
+              <!--Electra-->
+              <option class="eur-electra" value="eur-electra-emily-vermeule">eur-electra-emily-vermeule</option>;
+              <option class="eur-electra" value="eur-electra-gilbert-murray">eur-electra-gilbert-murray</option>;
+              <!--Hecuba-->
+              <option class="eur-hecuba" value="eur-hecuba-theodore-buckley">eur-hecuba-theodore-buckley</option>;
+              <option class="eur-hecuba" value="eur-hecuba-willaim-arrowsmith">eur-hecuba-willaim-arrowsmith</option>;
+              <!--Helen-->
+              <option class="eur-helen" value="eur-helen-edward-coleridge">eur-helen-edward-coleridge</option>;
+              <option class="eur-helen" value="eur-helen-richmond-lattimore">eur-helen-richmond-lattimore</option>;
+              <!--Heracleidae-->
+              <option class="eur-heracleidae" value="eur-heracleidae-mark-griffith">eur-heracleidae-mark-griffith</option>;
+              <option class="eur-heracleidae" value="eur-heracleidae-theodore-buckley">eur-heracleidae-theodore-buckley</option>;
+              <!--Heracles-->
+              <option class="eur-heracles" value="eur-heracles-edward-coleridge">eur-heracles-edward-coleridge</option>;
+              <option class="eur-heracles" value="eur-heracles-michael-halleran">eur-heracles-michael-halleran</option>;
+              <option class="eur-heracles" value="eur-heracles-william-arrowsmith">eur-heracles-william-arrowsmith</option>;
+              <!--Hippolytus-->
+              <option class="eur-hippolytus" value="eur-hippolytus-david-grene">eur-hippolytus-david-grene</option>;
+              <option class="eur-hippolytus" value="eur-hippolytus-theodore-buckley">eur-hippolytus-theodore-buckley</option>;
+              <!--Ion-->
+              <option class="eur-ion" value="eur-ion-robert-potter">eur-ion-robert-potter</option>;
+              <option class="eur-ion" value="eur-ion-ronald-willets">eur-ion-ronald-willets</option>;
+              <!--Iphigenia in Aulis-->
+              <option class="eur-iphigenia-in-aulis" value="eur-iphigenia-in-aulis-charles-walker">eur-iphigenia-in-aulis-charles-walker</option>;
+              <option class="eur-iphigenia-in-aulis" value="eur-iphigenia-in-aulis-theodore-buckley">eur-iphigenia-in-aulis-theodore-buckley</option>;
+              <!--Iphigenia in Tauris-->
+              <option class="eur-iphigenia-in-tauris" value="eur-iphigenia-in-tauris-anne-carson">eur-iphigenia-in-tauris-anne-carson</option>;
+              <option class="eur-iphigenia-in-tauris" value="eur-iphigenia-in-tauris-theodore-buckley">eur-iphigenia-in-tauris-theodore-buckley</option>;
+              <!--Medea-->
+              <option class="eur-medea" value="eur-medea-oliver-taplin">eur-medea-oliver-taplin</option>;
+              <option class="eur-medea" value="eur-medea-theodore-buckley">eur-medea-theodore-buckley</option>;
+              <option class="eur-medea" value="eur-medea-michael-collier">eur-medea-michael-collier</option>;
+              <option class="eur-medea" value="eur-medea-diane-svarlien">eur-med-diane-svarlien</option>;
+              <!--Orestes-->
+              <option class="eur-orestes" value="eur-orestes-william-arrowsmith">eur-orestes-william-arrowsmith</option>;
+              <option class="eur-orestes" value="eur-orestes-theodore-buckley">eur-orestes-theodore-buckley</option>;
+              <!--Rhesus-->
+              <option class="eur-rhesus" value="eur-rhesus-gilbert-murray">eur-rhesus-gilbert-murray</option>;
+              <option class="eur-rhesus" value="eur-rhesus-richmond-lattimore">eur-rhesus-richmond-lattimore</option>;
+              <!--Suppliants-->
+              <option class="eur-suppliants" value="eur-suppliants-edward-coleridge">eur-suppliants-edward-coleridge</option>;
+              <option class="eur-suppliants" value="eur-suppliants-frank-jones">eur-suppliants-frank-jones</option>;
+              <!--The Phoenician Women-->
+              <option class="eur-the-phoenician-women" value="eur-the-phoenician-women-elizabeth-wyckoff">eur-the-phoenician-women-elizabeth-wyckoff</option>;
+              <option class="eur-the-phoenician-women" value="eur-the-phoenician-women-theodore-buckley">eur-the-phoenician-women-theodore-buckley</option>;
+              <!--The Trojan Women-->
+              <option class="eur-the-trojan-women" value="eur-the-trojan-women-gilbert-murray">eur-the-trojan-women-gilbert-murray</option>;
+              <option class="eur-the-trojan-women" value="eur-the-trojan-women-richmond-lattimore">eur-the-trojan-women-richmond-lattimore</option>;
+              
+
+
+              <!-- Aeschylus options of all translations -->
+              <option class="aes-agamemnon" value="aes-agamemnon-trans-a">Aes Agam translation A</option>;
+              <option class="aes-agamemnon" value="aes-agamemnon-trans-b">Aes Agam translation B</option>;
                  
                 
             
@@ -145,10 +209,76 @@
           <form>
             <label for="pick-translation">Select translation 2 to compare:</label>
             <select id="pick-translation-2" name="showTranslation2">
-                <option class="eur-medea" value="eur-med-michael-collier">eur-med-michael-collier</option>;
-                <option class="eur-medea" value="eur-med-diane-svarlien">eur-med-diane-svarlien</option>;
-                <option class="aes-agamemnon" value="aes-agamemnon-trans-a">Aes Agam translation A</option>;
-                <option class="aes-agamemnon" value="aes-agamemnon-trans-b">Aes Agam translation B</option>;
+               <!-- Euripides options of all translations -->
+              <!--Alcestis-->
+              <option class="eur-alcestis" value="eur-alcestis-richmond-lattimore">eur-alcestis-richmond-lattimore</option>;
+              <option class="eur-alcestis" value="eur-alcestis-theodore-buckley">eur-alcestis-theodore-buckley</option>;
+              <!--Andromache-->
+              <option class="eur-andromache" value="eur-andromache-deborah-roberts">eur-andromache-deborah-roberts</option>;
+              <option class="eur-andromache" value="eur-andromache-edward-coleridge">eur-andromache-edward-coleridge</option>;
+              <!--Bacchae-->
+              <option class="eur-the-bacchae" value="eur-the-bacchae-theodore-buckley">eur-the-bacchae-theodore-buckley</option>;
+              <option class="eur-the-bacchae" value="eur-the-bacchae-william-arrowsmith">eur-the-bacchae-william-arrowsmith</option>;
+              <!--Cyclops-->
+              <option class="eur-cyclops" value="eur-cyclops-edward-coleridge">eur-cyclops-edward-coleridge</option>;
+              <option class="eur-cyclops" value="eur-cyclops-william-arrowsmith">eur-cyclops-william-arrowsmith</option>;
+              <!--Electra-->
+              <option class="eur-electra" value="eur-electra-emily-vermeule">eur-electra-emily-vermeule</option>;
+              <option class="eur-electra" value="eur-electra-gilbert-murray">eur-electra-gilbert-murray</option>;
+              <!--Hecuba-->
+              <option class="eur-hecuba" value="eur-hecuba-theodore-buckley">eur-hecuba-theodore-buckley</option>;
+              <option class="eur-hecuba" value="eur-hecuba-willaim-arrowsmith">eur-hecuba-willaim-arrowsmith</option>;
+              <!--Helen-->
+              <option class="eur-helen" value="eur-helen-edward-coleridge">eur-helen-edward-coleridge</option>;
+              <option class="eur-helen" value="eur-helen-richmond-lattimore">eur-helen-richmond-lattimore</option>;
+              <!--Heracleidae-->
+              <option class="eur-heracleidae" value="eur-heracleidae-mark-griffith">eur-heracleidae-mark-griffith</option>;
+              <option class="eur-heracleidae" value="eur-heracleidae-theodore-buckley">eur-heracleidae-theodore-buckley</option>;
+              <!--Heracles-->
+              <option class="eur-heracles" value="eur-heracles-edward-coleridge">eur-heracles-edward-coleridge</option>;
+              <option class="eur-heracles" value="eur-heracles-michael-halleran">eur-heracles-michael-halleran</option>;
+              <option class="eur-heracles" value="eur-heracles-william-arrowsmith">eur-heracles-william-arrowsmith</option>;
+              <!--Hippolytus-->
+              <option class="eur-hippolytus" value="eur-hippolytus-david-grene">eur-hippolytus-david-grene</option>;
+              <option class="eur-hippolytus" value="eur-hippolytus-theodore-buckley">eur-hippolytus-theodore-buckley</option>;
+              <!--Ion-->
+              <option class="eur-ion" value="eur-ion-robert-potter">eur-ion-robert-potter</option>;
+              <option class="eur-ion" value="eur-ion-ronald-willets">eur-ion-ronald-willets</option>;
+              <!--Iphigenia in Aulis-->
+              <option class="eur-iphigenia-in-aulis" value="eur-iphigenia-in-aulis-charles-walker">eur-iphigenia-in-aulis-charles-walker</option>;
+              <option class="eur-iphigenia-in-aulis" value="eur-iphigenia-in-aulis-theodore-buckley">eur-iphigenia-in-aulis-theodore-buckley</option>;
+              <!--Iphigenia in Tauris-->
+              <option class="eur-iphigenia-in-tauris" value="eur-iphigenia-in-tauris-anne-carson">eur-iphigenia-in-tauris-anne-carson</option>;
+              <option class="eur-iphigenia-in-tauris" value="eur-iphigenia-in-tauris-theodore-buckley">eur-iphigenia-in-tauris-theodore-buckley</option>;
+              <!--Medea-->
+              <option class="eur-medea" value="eur-medea-oliver-taplin">eur-medea-oliver-taplin</option>;
+              <option class="eur-medea" value="eur-medea-theodore-buckley">eur-medea-theodore-buckley</option>;
+              <option class="eur-medea" value="eur-medea-michael-collier">eur-medea-michael-collier</option>;
+              <option class="eur-medea" value="eur-medea-diane-svarlien">eur-med-diane-svarlien</option>;
+              <!--Orestes-->
+              <option class="eur-orestes" value="eur-orestes-william-arrowsmith">eur-orestes-william-arrowsmith</option>;
+              <option class="eur-orestes" value="eur-orestes-theodore-buckley">eur-orestes-theodore-buckley</option>;
+              <!--Rhesus-->
+              <option class="eur-rhesus" value="eur-rhesus-gilbert-murray">eur-rhesus-gilbert-murray</option>;
+              <option class="eur-rhesus" value="eur-rhesus-richmond-lattimore">eur-rhesus-richmond-lattimore</option>;
+              <!--Suppliants-->
+              <option class="eur-suppliants" value="eur-suppliants-edward-coleridge">eur-suppliants-edward-coleridge</option>;
+              <option class="eur-suppliants" value="eur-suppliants-frank-jones">eur-suppliants-frank-jones</option>;
+              <!--The Phoenician Women-->
+              <option class="eur-the-phoenician-women" value="eur-the-phoenician-women-elizabeth-wyckoff">eur-the-phoenician-women-elizabeth-wyckoff</option>;
+              <option class="eur-the-phoenician-women" value="eur-the-phoenician-women-theodore-buckley">eur-the-phoenician-women-theodore-buckley</option>;
+              <!--The Trojan Women-->
+              <option class="eur-the-trojan-women" value="eur-the-trojan-women-gilbert-murray">eur-the-trojan-women-gilbert-murray</option>;
+              <option class="eur-the-trojan-women" value="eur-the-trojan-women-richmond-lattimore">eur-the-trojan-women-richmond-lattimore</option>;
+              
+
+
+              <!-- Aeschylus options of all translations -->
+              <option class="aes-agamemnon" value="aes-agamemnon-trans-a">Aes Agam translation A</option>;
+              <option class="aes-agamemnon" value="aes-agamemnon-trans-b">Aes Agam translation B</option>;
+                 
+                
+            
             </select>
           </form>
 
@@ -172,7 +302,7 @@
           </script>
 
           <iframe id="transPDF2" src="/tragedies/euripides_medea_trans_michael_collier.pdf" title="Euripides, Medea. Trans. Michael Collier."
-            width="100%" height="850" style="background-color: white;">
+            width="100%" height="850" style="background-color: rgb(255, 255, 255);">
           </iframe>
           <h4 id="translation-2"></h4>
         </div>

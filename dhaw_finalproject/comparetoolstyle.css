@@ -18,7 +18,7 @@ body, h1, h2, h3, ul, li, p {
   font-size: xx-large;
 }
   body{
-    background-color: rgb(107, 107, 107) ;
+    background-color: rgb(9, 80, 84) ;
     color:#f7f7ff;
   }
   /* Style for navigation */
@@ -51,7 +51,7 @@ body, h1, h2, h3, ul, li, p {
   .nav-links li a {
     color:#fff;
     font-size:medium;
-    font-family: sans-serif;
+    font-family: Monaco;
     font-weight: medium;
     text-decoration:none;
     padding: 10px 15px; /* Add padding to the buttons */
@@ -62,7 +62,7 @@ body, h1, h2, h3, ul, li, p {
   }
   
   .nav-links li a:hover {
-    background-color: #d9f0f2; /* Change background on hover */
+    background-color: #ff5e1e; /* Change background on hover */
     font-size: large;
     color:#120f69
 }
@@ -70,40 +70,44 @@ body, h1, h2, h3, ul, li, p {
     display:grid;
     grid-template-columns: 50% 50%;
     padding: 100px
-}   
+  }   
     #select-greek-tragedies h3{
     text-align: center; /* Center-align the navigation links */
     padding:40px;
-    font-family: sans-serif;    font-weight:500;
-    color:rgb(149, 231, 229);
+    font-family: sans-serif;    
+    font-weight:500;
+    color:rgb(161, 164, 164);
  
     }  
     
     #select-greek-tragedies h2{
     padding: 80px;
     background-color:rgb(3, 20, 73);
-    font-family: Geneva, Tahoma, sans-serif;
+    font-family: Monaco;
     font-size:xx-large;
     font-style: italic;
     }  
     #select-greek-tragedies h4{
     text-align: center; /* Center-align the navigation links */
     padding:20px;
-    color:rgb(255, 241, 205);
+    color:rgb(154, 152, 148);
 }
 #select-greek-tragedies h3{
-  background-color:#000000;
-  font-family: Geneva, Tahoma, sans-serif;
+  background-color:#030616;
+  font-family: Monaco;
   font-size:x-large;
   font-style:normal;
-  padding-top:4%;
-  padding-bottom:2%;
-  color:#e7e6ff
+  padding:18%;
+  margin-bottom: 10px;
+  /* padding-top:4%;
+  padding-bottom:2%; */
+  color:#e6e6e6
 }
 
 
 main section h3 div form select option {
   margin: 40px;
+  font-family: Monaco;
   background: rgb(108, 23, 23);
   color: #c14242;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
@@ -112,16 +116,16 @@ main section h3 div form select option {
 select {
   padding: 8px;
   font-size: 15px;
-  font-family: sans-serif;
-  border: 2px solid #d9d9d9;
+  font-family: Monaco;
+  border: 2px solid #f7f7f7;
   border-radius: 4px;
-  background-color: #f7f7ff;
+  background-color: #f9f3f0;
   color: #07301e;
 }
 
 #aboutpageheader {
   color:white;
-  background-color:black;
+  background-color:#030616;
   text-align: center;
   padding: 20%;
   text-shadow: 1px 1px 1cqmax rgb(235, 230, 212);
@@ -132,4 +136,31 @@ select {
   background-color: #120f69;
   text-align: center;
   padding: 20%;
+}
+
+#tragedyHeader{
+  color:white;
+  background-color:#030616;
+  text-align: center;
+  padding: 40%;
+  height: 40 px;
+  text-shadow: 1px 1px 1cqmax rgb(199, 204, 218);
+}
+
+ #aeschylus, #euripides, #sophocles{
+  color:white;
+  background-color:#030616;
+  text-align: center;
+  padding: 20%;
+  text-shadow: 30px 1cqmax rgb(34, 52, 57);
+}
+
+.greektragediansinfo{
+  color:white;
+  background-color: #120f69;
+  text-align: center;
+  padding: 25%;
+  margin-left: -10px;
+  margin-right: -10px;
+  margin: -10px;
 }
