@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Navigation Tabs</title>
+  <link rel="stylesheet" href="comparetoolstyle.css">
+  <script src="comparetoolscript.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <header>
+    <!-- <div class="logo">
+        <img src="demo_logo.png" alt="logo">
+      </div> -->
+    <div id="headerImage">
+      <h2>COMPARE GREEK TRAGEDIES</h2>
+  
+    <nav>
+      <ul class="nav-links">
+        <li><a href="/aboutpage.html">About</a></li>
+        <li><a href="/comparetool.html">Compare Greek Tragedies</a></li>
+        <li><a href="#greek-tragedians">Greek Tragedians</a></li>
+        <li><a href="#ancient-objects">Ancient Objects</a></li>
+      </ul>
+    </nav>
+
+    </div>
+  </header>
+
+  <main>
+    <!-- Main content here -->
+    <section id="select-greek-tragedies">
+      <h3>
+        <div id="choose-tragedy">
+          <form> <!--DROPDOWN OPTION MENU TO SELECT A GREEK TRAGEDY-->
+            <label for="select-tragedies">Select a greek tragedy to examine:</label>
+            <select name="tragedy" id="tragedy-options" onmouseover="getTragedy()" onchange="getTragedy()">
+              <optgroup label="Aeschylus"> <!--GROUP PLAYS BY AESCHYLUS-->
+                <option value="aes-the-persians">The Persians</option>
+                <option value="aes-seven-against-thebes">Seven Against Thebes</option>
+                <option value="aes-suppliants">Suppliants</option>
+                <option value="aes-agamemnon">Agamemnon</option>
+                <option value="aes-choephoroi">The Libation Bearers</option>
+                <option value="aes-eumenides">Eumenides</option>
+                <option value="aes-prometheus-bound">Prometheus Bound</option>
+              </optgroup>
+              <optgroup label="Sophocles"> <!--GROUP PLAYS BY SOPHOCLES-->
+                <option value="sop-ajax">Ajax</option>
+                <option value="sop-women-of-trachis">Women of Trachis</option>
+                <option value="sop-oedipus-rex">Oedipus Rex</option>
+                <option value="sop-electra">Electra</option>
+                <option value="sop-philoctetes">Philoctetes</option>
+                <option value="sop-oedipus-at-colonus">Oedipus at Colonus</option>
+              </optgroup>
+              <optgroup label="Euripides"> <!--GROUP PLAYS BY EURIPIDES-->
+                <option value="eur-alcestis">Alcestis</option>
+                <option value="eur-medea">Medea</option>
+                <option value="eur-heracleidae">Heracleidae</option>
+                <option value="eur-hippolytus">Hippolytus</option>
+                <option value="eur-the-trojan-women">The Trojan Women</option>
+                <option value="eur-andromache">Andromache</option>
+                <option value="eur-hecuba">Hecuba</option>
+                <option value="eur-suppliants">Suppliants</option>
+                <option value="eur-ion">Ion</option>
+                <option value="eur-iphigenia-in-tauris">Iphigenia in Tauris</option>
+                <option value="eur-electra">Electra</option>
+                <option value="eur-helen">Helen</option>
+                <option value="eur-heracles">Heracles</option>
+                <option value="eur-the-phoenician-women">The Phoenician Women</option>
+                <option value="eur-orestes">Orestes</option>
+                <option value="eur-iphigenia-in-aulis">Iphigenia in Aulis</option>
+                <option value="eur-the-bacchae">The Bacchae</option>
+                <option value="eur-cyclops">Cyclops</option>
+                <option value="eur-rhesus">Rhesus</option>
+              </optgroup>
+            </select>
+            <br><br>
+            <!-- <input type="submit" value="Submit"> -->
+          </form>
+        </div>
+        <!-- Display the selected -->
+        <div id="selected-tragedy"></div>
+
+        <!--Change result based on selection of play-->
+        <!-- <button onclick="getTragedy()" class="btns">Submit</button> -->
+
+
+
+      </h3>
+
+      <script>updateTragedySelection();</script>
+      <div class="grid-container">
+        <div id="translation-1">
+          <form>
+            <label for="pick-translation">Select translation 1 to compare:</label>
+            <select id="pick-translation-1" name="showTranslation1">
+             
+                <!-- // if (tragedy == "eur-medea") {
+                //   <option value="medea-translation-1">Medea translation 1</option>;
+                //   <option value="medea-translation-2">Medea translation 2</option>;
+                // } else if (tragedy == "eur-hippolytus") {
+                //   <option value="hippolytus-translation-1">Hippolytus translation 1</option>;
+                //   <option value="hippolytus-translation-2">Hippolytus translation 2</option>;
+                // } else { -->
+                  <option class="eur-medea" value="eur-med-michael-collier">eur-med-michael-collier</option>;
+                  <option class="eur-medea" value="eur-med-diane-svarlien">eur-med-diane-svarlien</option>;
+                  <option class="aes-agamemnon" value="aes-agamemnon-trans-a">Aes Agam translation A</option>;
+                  <option class="aes-agamemnon" value="aes-agamemnon-trans-b">Aes Agam translation B</option>;
+                 
+                
+            
+            </select>
+          </form>
+
+          <!-- Display the selected -->
+          <div id="selected-translation-1"></div>
+          <script>getTranslation1();</script>
+          <!-- <script>
+            // JavaScript to handle the selection and display of the chosen item
+            const selectTranslation1 = document.getElementById('translations');
+            const displaySelectedTranslation1 = document.getElementById('selected-translation-1');
+
+            selectTranslation1.addEventListener('change', "pick-translation") { displaySelectedTranslation1.textContent = `You selected: ${event.target.value}`;
+              document.getElementById("translation-1").textContent = displaySelectedTranslation1.textContent;
+              //if event.target.value == "eur-medea"
+            };
+
+            function showTranslation() {
+              document.getElementById("translations")
+            }
+          </script> -->
+          <iframe id="transPDF1" src="/tragedies/euripides_medea_trans_diane_svarlien.pdf" title="Euripides, Medea. Trans. Diane Svarlien."
+            width="100%" height="850" style="background-color: white;">
+          </iframe>
+          <h4 id="translation-1"></h4>
+          <!-- <script>
+            document.getElementById("translation-1") = displaySelected.textContent
+          </script> -->
+
+        </div>
+        <div id="translation-2">
+          <form>
+            <label for="pick-translation">Select translation 2 to compare:</label>
+            <select id="pick-translation-2" name="showTranslation2">
+                <option class="eur-medea" value="eur-med-michael-collier">eur-med-michael-collier</option>;
+                <option class="eur-medea" value="eur-med-diane-svarlien">eur-med-diane-svarlien</option>;
+                <option class="aes-agamemnon" value="aes-agamemnon-trans-a">Aes Agam translation A</option>;
+                <option class="aes-agamemnon" value="aes-agamemnon-trans-b">Aes Agam translation B</option>;
+            </select>
+          </form>
+
+          <!-- Display the selected translation -->
+          <div id="selected-translation-2"></div>
+          
+          <script>
+            getTranslation2();
+            // JavaScript to handle the selection and display of the chosen translation
+            // const selectElement = document.getElementById('pick-translation-2');
+            // const displaySelected = document.getElementById('selected-translation-2');
+
+            // selectElement.addEventListener('change', (event) => {
+            //   displaySelected.textContent = `You selected: ${event.target.value}`;
+            // });
+
+            // const iframe = document.createElement('iframe');
+            //   iframe.src = "euripides_medea_trans_ian_johnson.html";
+            //   iframe.title = "Euripides, Medea. Trans. Ian Johnson.";
+            //   document.body.appendChild(iframe);
+          </script>
+
+          <iframe id="transPDF2" src="/tragedies/euripides_medea_trans_michael_collier.pdf" title="Euripides, Medea. Trans. Michael Collier."
+            width="100%" height="850" style="background-color: white;">
+          </iframe>
+          <h4 id="translation-2"></h4>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  
+</body>
+
+
+</html>

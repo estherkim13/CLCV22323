@@ -1,0 +1,101 @@
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+    font-family: Monaco;
+  }
+  body{
+    background-color: rgb(234, 217, 210) ;
+  }
+  /* Style for navigation */
+  header {
+    background-color: rgb(255, 255, 255); /* Brown color for the header */
+    color: #ffffff;
+    padding: 20px 10px; /* Add padding to the header */
+    box-shadow: 10px 10px 20px rgba(88, 65, 65, 0.2);
+  }
+  .logo img {
+    width: 40px; /* Adjust the width of the logo as needed */
+    height: auto;
+    margin-left: 10px; /* Provide some spacing */
+    margin-bottom: 0px;
+    border: 1px solid #D7CEC7; /* border */
+    padding:5px;
+  }
+  .nav-links {
+    text-align: center; /* Center-align the navigation links */
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: #0808b1;
+    font-size:medium;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration:none;
+    padding: 10px 15px; /* Add padding to the buttons */
+    border: 1px solid #4f4aee; /* border */
+    border-radius: 5px; /* Add some rounded corners */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+    box-shadow: 5px 5px rgba(88, 65, 65, 0.2);
+  }
+  
+  .nav-links li a:hover {
+    background-color: #d9f0f2; /* Change background on hover */
+    font-size: large;
+}
+  .grid-container{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    padding: 100px
+}   
+    #compare-greek-tragedies h2,h3{
+    text-align: center; /* Center-align the navigation links */
+    padding:40px;
+    font-family: sans-serif;    font-weight:500;
+    color:rgb(71, 170, 169);
+ 
+    }  
+    
+    #compare-greek-tragedies h2{
+    padding: 80px;
+    background-color:rgb(3, 20, 73);
+    font-family: Geneva, Tahoma, sans-serif;
+    font-size:xx-large;
+    font-style: italic;
+    }  
+    #compare-greek-tragedies h4{
+    text-align: center; /* Center-align the navigation links */
+    padding:20px;
+    color:rgb(255, 241, 205);
+}
+#compare-greek-tragedies h3{
+  background-color:#ffffff;
+  font-family: Geneva, Tahoma, sans-serif;
+  font-size:x-large;
+  font-style:normal;
+  padding-top:4%;
+  padding-bottom:2%;
+  color:#19158b
+}
+
+
+main section h3 div form select option {
+  margin: 40px;
+  background: rgb(108, 23, 23);
+  color: #fff;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
+}
+
+select {
+  padding: 8px;
+  font-size: 15px;
+  font-family: sans-serif;
+  border: 3px solid #8399a9;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #208157;
+}

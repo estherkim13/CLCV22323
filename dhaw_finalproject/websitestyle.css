@@ -1,0 +1,27 @@
+body{
+    background-color: blanchedalmond
+}
+h1{
+    color: darkslategray
+}
+p{
+    color:maroon
+}
+
+.classic{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:4px;
+    padding-right:4px;
+}
+
+.top-nav-bar{
+    background-color:brown;
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    gap:50px;
+}

@@ -1,0 +1,45 @@
+/* Basic reset for margin and padding */
+body, h1, h2, h3, ul, li, p {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    background-color: #D7CEC7 ;
+  }
+  /* Style for navigation */
+  header {
+    background-color: white; /* Brown color for the header */
+    color: #565656;
+    padding: 20px 0; /* Add padding to the header */
+  }
+  .logo img {
+    width: 40px; /* Adjust the width of the logo as needed */
+    height: auto;
+    margin-left: 10px; /* Provide some spacing */
+    margin-bottom: 0px;
+    border: 1px solid #D7CEC7; /* border */
+    padding:5px;
+  }
+  .nav-links {
+    text-align: center; /* Center-align the navigation links */
+  }
+  
+  .nav-links li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  .nav-links li a {
+    color: #76323F;
+    text-decoration:none;
+    padding: 10px 15px; /* Add padding to the buttons */
+    border: 1px solid #D7CEC7; /* border */
+    border-radius: 5px; /* Add some rounded corners */
+    transition: all 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .nav-links li a:hover {
+    background-color: #D7CEC7; /* Change background on hover */
+    color: #76323F;
+    text-decoration: none;
+  }
