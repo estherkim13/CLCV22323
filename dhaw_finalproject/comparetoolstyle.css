@@ -71,15 +71,15 @@ body, h1, h2, h3, ul, li, p {
     grid-template-columns: 50% 50%;
     padding: 100px
   }   
-    #select-greek-tragedies h3{
-    text-align: center; /* Center-align the navigation links */
+    /* #select-greek-tragedies h3{
+    text-align: center; 
+    /* Center-align the navigation links * 
     padding:40px;
     font-family: sans-serif;    
     font-weight:500;
     color:rgb(161, 164, 164);
- 
-    }  
-    
+  } 
+    */
     #select-greek-tragedies h2{
     padding: 80px;
     background-color:rgb(3, 20, 73);
@@ -97,27 +97,39 @@ body, h1, h2, h3, ul, li, p {
   font-family: Monaco;
   font-size:x-large;
   font-style:normal;
-  padding:18%;
+  padding:20%;
   margin-bottom: 10px;
   /* padding-top:4%;
   padding-bottom:2%; */
-  color:#e6e6e6
+  color:#ffffff;
+  text-shadow:17px 10px 1px rgb(34, 52, 57) ;
+
 }
-
-
+#select-tragedies{
+}
+/* #choose-tragedy{
+  /box-shadow:
+  0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+  0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+  0 12.5px 10px rgba(0, 0, 0, 0.06),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+  0 41.8px 33.4px rgba(0, 0, 0, 0.086),
+  0 100px 80px rgba(0, 0, 0, 0.12);
+} */ 
+/* 
 main section h3 div form select option {
   margin: 40px;
   font-family: Monaco;
   background: rgb(108, 23, 23);
   color: #c14242;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-}
+} */
 
 select {
   padding: 8px;
   font-size: 15px;
   font-family: Monaco;
-  border: 2px solid #f7f7f7;
+  border: 2px solid #fff3f3;
   border-radius: 4px;
   background-color: #f9f3f0;
   color: #07301e;
@@ -128,7 +140,7 @@ select {
   background-color:#030616;
   text-align: center;
   padding: 20%;
-  text-shadow: 1px 1px 1cqmax rgb(235, 230, 212);
+  text-shadow: 30px 1cqmax rgb(34, 52, 57);
 
 }
 #aboutpageinfo {
@@ -144,7 +156,7 @@ select {
   text-align: center;
   padding: 40%;
   height: 40 px;
-  text-shadow: 1px 1px 1cqmax rgb(199, 204, 218);
+  text-shadow: 1px 1px 1cqmax rgb(250, 197, 188);
 }
 
  #aeschylus, #euripides, #sophocles{

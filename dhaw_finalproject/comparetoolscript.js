@@ -21,6 +21,7 @@ let playList = [
         ['eur-heracleidae', 'eur-heracleidae-theodore-buckley','/tragedies/euripides_heracleidae_trans_theodore_buckley.pdf'],
         ['eur-heracles', 'eur-heracles-edward-coleridge','/tragedies/euripides_heracles_trans_edward_coleridge.pdf'],
         ['eur-heracles', 'eur-heracles-michael-halleran','/tragedies/euripides_heracles_trans_michael_halleran.pdf'],
+        ['eur-heracles', 'eur-heracles-william-arrowsmith','/tragedies/euripides_heracles_trans_willaim_arrowsmith.pdf'],
         ['eur-hippolytus', 'eur-hippolytus-david-grene','/tragedies/euripides_hippolytus_trans_david_grene.pdf'],
         ['eur-hippolytus', 'eur-hippolytus-theodore-buckley','/tragedies/euripides_hippolytus_trans_theodore_buckley.pdf'],
         ['eur-ion', 'eur-ion-robert-potter','/tragedies/euripides_ion_trans_robert_potter.pdf'],
@@ -31,8 +32,8 @@ let playList = [
         ['eur-iphigenia-in-tauris', 'eur-iphigenia-in-tauris-theodore-buckley','/tragedies/euripides_iphigenia_in_tauris_trans_theodore_buckley.pdf'],
         ['eur-medea', 'eur-medea-diane-svarlien','/tragedies/euripides_medea_trans_diane_svarlien.pdf'],
         ['eur-medea', 'eur-medea-oliver-taplin','/tragedies/euripides_medea_trans_oliver_taplin.pdf'],
-        ['eur-medea', 'eur-med-theodore-buckley','/tragedies/euripides_medea_trans_theodore_buckley.pdf'],
-        ['eur-medea', 'eur-med-michael-collier','/tragedies/euripides_medea_trans_michael_collier.pdf'],
+        ['eur-medea', 'eur-medea-theodore-buckley','/tragedies/euripides_medea_trans_theodore_buckley.pdf'],
+        ['eur-medea', 'eur-medea-michael-collier','/tragedies/euripides_medea_trans_michael_collier.pdf'],
         ['eur-orestes', 'eur-orestes-william-arrowsmith','/tragedies/euripides_orestes_trans_william_arrowsmith.pdf'],
         ['eur-orestes', 'eur-orestes-theodore-buckley','/tragedies/euripides_orestes_trans_theodore_buckley.pdf'],
         ['eur-rhesus', 'eur-rhesus-gilbert-murray','/tragedies/euripides_rhesus_trans_gilbert_murray.pdf'],
@@ -67,17 +68,18 @@ function getTragedy() {
     // Triggered when the select dropdown changes
     document.getElementById("tragedy-options").addEventListener("change", (event) => {
     // Display what was selected
-    displaySelectedTragedy.textContent = `You selected: ${event.target.value}`;
+    displaySelectedTragedy.style.textShadow = 'none';
+    displaySelectedTragedy.innerHTML = `You selected: ${event.target.value} <br><br> see available translations below: `;
     document.getElementById("choose-tragedies").textContent = displaySelectedTragedy.textContent;
     // Change the value of tragedy based on selection
     tragedy=`${event.target.value}`;
     //change the PDF on iframe
-    let url = fetchDefaultPlay(tragedy);
-    // const timestampedURL = url + 'edited';
-    // displaySelected.textContent=`${timestampedURL}`; // Check the generated URL in the console
-    document.getElementById('transPDF1').src = url;
-    document.getElementById('transPDF2').src = url;
-
+    // let url = fetchDefaultPlay(tragedy);
+    // // const timestampedURL = url + 'edited';
+    // // displaySelected.textContent=`${timestampedURL}`; // Check the generated URL in the console
+    // document.getElementById('transPDF1').src = url;
+    // document.getElementById('transPDF2').src = url;
+    // document.location.reload(true);
     });
 
     // CODE TO CHANGE INNERHTML OF THE TRANSLATION OPTIONS
@@ -100,8 +102,6 @@ function getTranslation1(){
     // displaySelected.textContent=`${timestampedURL}`; // Check the generated URL in the console
     document.getElementById('transPDF1').src = url;
     });
-    
-
 }
 
 function getTranslation2(){
@@ -117,7 +117,6 @@ function getTranslation2(){
     // displaySelected.textContent=`${timestampedURL}`; // Check the generated URL in the console
     document.getElementById('transPDF2').src = url;
     });
-   
 }
 
 function updateTragedySelection(){
@@ -129,11 +128,6 @@ function updateTragedySelection(){
         $("[name=showTranslation1] option").detach()
         showTranslation1.filter("." + val).clone().appendTo("[name=showTranslation1]")
         }).change()
-        //update PDF
-        let url = fetchDefaultPlay(tragedy);
-        const timestampedURL = url + 'edited';
-        displaySelected.textContent=`${timestampedURL}`; // Check the generated URL in the console
-        document.getElementById('transPDF1').src = url;
     });
 
     $(document).ready(function() {
@@ -144,13 +138,17 @@ function updateTragedySelection(){
     $("[name=showTranslation2] option").detach()
     showTranslation2.filter("." + val).clone().appendTo("[name=showTranslation2]")
     }).change()
-    //update PDF
+    });
+    //not functional yet!
     let url = fetchDefaultPlay(tragedy);
-    const timestampedURL = url + 'edited';
-    displaySelected.textContent=`${timestampedURL}`; // Check the generated URL in the console
+    // const timestampedURL = url + 'edited';
+    // displaySelected.textContent=`${timestampedURL}`; // Check the generated URL in the console
+    document.getElementById('transPDF1').src = url;
     document.getElementById('transPDF2').src = url;
-});
+    document.location.reload(true);
 }
+
+
 function fetchPlay(translation){
     for(var i = 0; i<playList.length; i++){
         if(playList[i][1]==translation){
